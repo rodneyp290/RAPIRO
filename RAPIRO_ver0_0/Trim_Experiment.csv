@@ -1,0 +1,31 @@
+Foot pitch,,,
+R,L,comment,conclusion
+0,0,both to positive angle (anti-clockwise) from goal,
+20,20,both negative angle from goal ,positive = clockwise (from front on)
+-20,-20,both major positive angle from goal,negative = anti-clockwise (looking from front on)
+10,10,"""his"" left is good, right need to go clockwise",
+15,10,both look good,
+Yaw,,"looks good at 0, 0",
+,,,
+Waist,Head,,
+20,20,both rotate to his left,
+0,0,"head mainly okay, but decrement both a little",
+-3,-2,GOOD! Actually waist a tiny bit off,
+-4,-2,not quite perfect,
+-5,-2,Good!,
+,,,
+foot yaw,,,
+R,L,"left looked off, right okay",
+0,15,moved toe in a lot move,need negative
+0,-5,Excellent!,
+,,,
+shoulder roll,,,
+R,L,,
+20,20,"his right is good, left didn't move?",
+20,-20,left move,opposite side so opposite sign (SIMON)
+20,-30,Good,
+,,,
+shoulder pitch,,,
+R,L,,
+20,-20,both tried to go in,
+-20,20,perfect,

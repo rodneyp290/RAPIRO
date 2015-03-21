@@ -3,9 +3,9 @@
 #include <Servo.h>
 
 #define SHIFT 7
-#define R 2          // Red LED
+#define R 0          // Red LED
 #define G 1          // Green LED
-#define B 0          // Blue LED
+#define B 2          // Blue LED
 #define TIME 15      // Column of Time
 #define MAXSN 12     // Max Number of Servos
 #define MAXMN 10     // Max Number of Motions
@@ -23,10 +23,10 @@ int trim[MAXSN] = { -2,  // Head yaw
                     -5,  // Waist yaw
                     20,  // R Sholder roll
                     -20,  // R Sholder pitch
-                    0,  // R Hand grip
+                    -35,  // R Hand grip
                     -30,  // L Sholder roll
                     20, // L Sholder pitch
-                    0,  // L Hand grip
+                    45,  // L Hand grip
                     0,  // R Foot yaw
                     15,  // R Foot pitch + clockwise
                     -5,  // L Foot yaw

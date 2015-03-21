@@ -3,9 +3,9 @@
 #include <Servo.h>
 
 #define SHIFT 7
-#define R 0          // Red LED
+#define R 2          // Red LED
 #define G 1          // Green LED
-#define B 2          // Blue LED
+#define B 0          // Blue LED
 #define TIME 15      // Column of Time
 #define MAXSN 12     // Max Number of Servos
 #define MAXMN 10     // Max Number of Motions
@@ -20,17 +20,17 @@ uint8_t eyes[3] = { 0, 0, 0};
 
 // Fine angle adjustments (degrees)
 int trim[MAXSN] = { 0,  // Head yaw
-                    0,  // Waist yaw
-                    0,  // R Sholder roll
+                    -5,  // Waist yaw
+                    -35,  // R Sholder roll
                     0,  // R Sholder pitch
                     0,  // R Hand grip
-                    0,  // L Sholder roll
-                    0,  // L Sholder pitch
+                    -25,  // L Sholder roll
+                    0, // L Sholder pitch
                     0,  // L Hand grip
                     0,  // R Foot yaw
-                    0,  // R Foot pitch
+                    15,  // R Foot pitch
                     0,  // L Foot yaw
-                    0}; // L Foot pitch
+                    2}; // L Foot pitch
 
 int nowAngle[MAXSN] =        { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};  // Initialize array to 0
 int targetAngle[MAXSN] =     { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};  // Initialize array to 0
